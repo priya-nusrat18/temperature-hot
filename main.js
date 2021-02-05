@@ -9,7 +9,7 @@ const lead = document.getElementById('lead');
 
 
  button.addEventListener('click', function () {
-     fetch('http://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&appid=a3832330cc5f28f6c6eedb00169e3d03')
+     fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&appid=a3832330cc5f28f6c6eedb00169e3d03')
  .then(res => res.json())
  .then(data => {
      const nameValue = data['name'];
